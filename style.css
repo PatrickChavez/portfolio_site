@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-color: #c2d3ed;
+  line-height: 1.5;
+}
+
+header h1,
+h2 {
+  margin: 3%;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 10%;
+}
+
+footer {
+  margin-top: 10%;
+}
+
+footer a {
+  font-size: 2.5rem;
+}
+
+a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #8f1209;
+}
+
+a:active {
+  color: #c47112;
+}
+
+.indexBody {
+  /* Code from W3Schools */
+  /* https://www.w3schools.com/css/css_align.asp */
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.indexBody a {
+  font-size: 2rem;
+}
+
+.indexBody ul {
+  /* Removing ul padding */
+  /* https://stackoverflow.com/questions/9620594/removing-ul-indentation-with-css */
+  padding: 0;
+}
+
+.indexBody li {
+  list-style-type: none;
+  margin: 5% auto;
+}
+
+/* Works */
+
+.worksBody {
+  margin: 3%;
+  font-size: 1.5rem;
+}
+
+.worksBody h1,
+footer {
+  text-align: center;
+}
+
+.worksBody h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.worksArea {
+  /* Code from CSS Grid Generator by by sarah_edo */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+/* Cards */
+
+/* Card Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_cards.asp */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  min-width: 400px;
+  min-height: 300px;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #658ecf;
+  margin: 5%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0px 0px 49px -8px #000000;
+}
+
+/* Add some padding inside the card container */
+.cardContainer {
+  padding: 4%;
+  min-height: 720px;
+  min-width: 360px;
+  border: solid 3px black;
+}
+
+.cardContainer h3 {
+  font-size: 3rem;
+  border-bottom: solid 2px black;
+  padding: 2%;
+}
+
+.cardContainer p {
+  font-size: 1.5rem;
+}
+
+/* Code from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+.cardContainer img {
+  border: thick double black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 200px;
+}
